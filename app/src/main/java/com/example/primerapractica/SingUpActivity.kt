@@ -11,12 +11,12 @@ class SingUpActivity : AppCompatActivity() {
         setContentView(R.layout.activity_sing_up)
 
 
-        /*val buttonlog= findViewById<Button>(R.id.AlCount)
+        val buttonlog= findViewById<Button>(R.id.AlCount)
 
         buttonlog.setOnClickListener{
             val intent= Intent(applicationContext,LoginActivity::class.java).apply{}
             startActivity(intent)
-        }*/
+        }
     }
 
 
