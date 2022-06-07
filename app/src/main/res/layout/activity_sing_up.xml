@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SingUpActivity"
+    android:orientation="vertical"
+    android:background="#fff"
+    android:padding="20dp"
+    android:layout_marginTop="20dp"
+    >
+
+    <ImageView
+        android:id="@+id/ResImage"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/registro"
+        />
+
+    <TextView
+        android:id="@+id/Welc"
+        android:layout_width="wrap_content"
+        android:layout_height="115dp"
+        android:fontFamily="@font/bungee"
+        android:text="Welcome"
+        android:textSize="40sp"
+        android:textColor="#000"
+        />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Username2"
+            android:hint="Username"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </com.google.android.material.textfield.TextInputEditText>
+
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Password2"
+            android:hint="Password"
+            app:passwordToggleEnabled="true"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword">
+
+            </com.google.android.material.textfield.TextInputEditText>
+
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <Button
+            android:id="@+id/SingUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sing Up"
+            android:backgroundTint="#000"
+            android:textColor="#fff"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"/>
+
+        <Button
+            android:id="@+id/AlCount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:background="#00000000"
+            android:text="Have already account? log in"
+            android:textColor="@color/black"
+            android:fontFamily="@font/antic"
+            android:elevation="0dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

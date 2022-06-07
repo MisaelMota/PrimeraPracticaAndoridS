@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "12052756313",
+    "project_id": "fir-proyect-b9a27",
+    "storage_bucket": "fir-proyect-b9a27.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:12052756313:android:4b7d581bbd04c13c48fe48",
+        "android_client_info": {
+          "package_name": "com.example.primerapractica"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "12052756313-h2qus0spcnjc9jslrnem6877qc3r4si7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCv9Ng3C21OISTylJB6rYr72Nhesp0hhLA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "12052756313-h2qus0spcnjc9jslrnem6877qc3r4si7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
