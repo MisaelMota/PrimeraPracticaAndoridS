@@ -40,11 +40,14 @@
             android:layout_height="wrap_content"
             android:id="@+id/Username2"
             android:hint="Username"
+            app:errorEnabled="true"
+            app:errorIconDrawable="@null"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:id="@+id/rEmail">
 
             </com.google.android.material.textfield.TextInputEditText>
 
@@ -58,12 +61,16 @@
             android:id="@+id/Password2"
             android:hint="Password"
             app:passwordToggleEnabled="true"
+            app:errorEnabled="true"
+            app:errorIconDrawable="@null"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="textPassword">
+                android:inputType="textPassword"
+                android:id="@+id/rPassword"
+                >
 
             </com.google.android.material.textfield.TextInputEditText>
 
@@ -74,7 +81,7 @@
 
 
         <Button
-            android:id="@+id/SingUp"
+            android:id="@+id/btnSingUp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Sing Up"
