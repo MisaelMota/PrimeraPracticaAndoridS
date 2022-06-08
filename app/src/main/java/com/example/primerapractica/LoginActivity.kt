@@ -14,7 +14,7 @@ class LoginActivity : AppCompatActivity() {
         val buttonSin= findViewById<Button>(R.id.NewUser)
 
         buttonSin.setOnClickListener{
-            val intent= Intent(applicationContext,SingUpActivity::class.java).apply{}
+            val intent= Intent(applicationContext,SingUpActivityPersonal::class.java).apply{}
             startActivity(intent)
         }
 
