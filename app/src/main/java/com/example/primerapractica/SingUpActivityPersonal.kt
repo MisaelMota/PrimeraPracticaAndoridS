@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import com.google.android.material.textfield.TextInputEditText
+import com.google.android.material.textfield.TextInputLayout
 import java.text.SimpleDateFormat
 import java.util.*
 
@@ -14,6 +15,7 @@ class SingUpActivityPersonal : AppCompatActivity() {
     private lateinit var txtBirth: TextInputEditText
     private lateinit var  btnBirth: Button
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sing_up_personal)
@@ -21,6 +23,7 @@ class SingUpActivityPersonal : AppCompatActivity() {
 
         txtBirth= findViewById(R.id.rBirthday)
         btnBirth=findViewById(R.id.btnCalendar)
+
         val buttonNext= findViewById<Button>(R.id.btnNext)
 
         buttonNext.setOnClickListener{

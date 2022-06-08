@@ -53,9 +53,10 @@
             android:layout_height="wrap_content"
             android:id="@+id/Password2"
             android:hint="Password"
+            app:errorIconDrawable="@null"
             app:passwordToggleEnabled="true"
             app:errorEnabled="true"
-            app:errorIconDrawable="@null"
+
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -95,5 +96,7 @@
             android:elevation="0dp"/>
 
     </LinearLayout>
+
+
 
 </LinearLayout>

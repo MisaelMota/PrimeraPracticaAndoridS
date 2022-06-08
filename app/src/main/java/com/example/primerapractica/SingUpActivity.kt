@@ -7,6 +7,7 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
 import androidx.core.util.PatternsCompat
+import com.google.android.material.textfield.TextInputLayout
 import com.google.firebase.auth.FirebaseAuth
 import java.util.regex.Pattern
 
@@ -14,12 +15,16 @@ class SingUpActivity : AppCompatActivity() {
 
 
     private lateinit var auth: FirebaseAuth;
+    private lateinit var layouttxt: TextInputLayout
+    private lateinit var layoutpass: TextInputLayout
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sing_up)
 
         auth=FirebaseAuth.getInstance();
+
 
         val btnSingUp= findViewById<Button>(R.id.btnSingUp)
         val txtUsername= findViewById<EditText>(R.id.rEmail)
@@ -56,16 +61,21 @@ class SingUpActivity : AppCompatActivity() {
 
     fun validateEmail():Boolean{
         val txtUsername= findViewById<EditText>(R.id.rEmail)
+        layouttxt= findViewById(R.id.Username2)
+
 
         return if (txtUsername.text.isEmpty()){
-            txtUsername.error="Field can not be empty"
+           // txtUsername.error="Field can not be empty"
+            layouttxt.error="Field can not be empty"
              false
         }else if (!PatternsCompat.EMAIL_ADDRESS.matcher(txtUsername.text.trim()).matches()){
-            txtUsername.error="Please enter a valid email address"
+            //txtUsername.error="Please enter a valid email address"
+            layouttxt.error="Please enter a valid email address"
             false
 
         }else{
-            txtUsername.error=null
+            //txtUsername.error=null
+            layouttxt.error=null
             true
         }
 
@@ -73,6 +83,7 @@ class SingUpActivity : AppCompatActivity() {
 
     fun validatePassword():Boolean{
         val txtPassword= findViewById<EditText>(R.id.rPassword)
+        layoutpass= findViewById(R.id.Password2)
         val passwordPatter= Pattern.compile(
             "^" +
 
@@ -86,14 +97,17 @@ class SingUpActivity : AppCompatActivity() {
         )
 
         return if (txtPassword.text.isEmpty()){
-            txtPassword.error="Field can not be empty"
+            //txtPassword.error="Field can not be empty"
+            layoutpass.error="Field can not be empty"
             false
         }else if (!passwordPatter.matcher(txtPassword.text.trim()).matches()){
-            txtPassword.error="Password is to weak"
+            //txtPassword.error="Password is to weak"
+            layoutpass.error="Password is to weak"
             false
 
         }else{
-            txtPassword.error=null
+            //txtPassword.error=null
+            layoutpass.error=null
             true
         }
     }
