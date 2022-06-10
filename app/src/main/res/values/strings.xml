@@ -1,3 +1,23 @@
 <resources>
     <string name="app_name">App Login</string>
+
+    <string-array name="Countries">
+        <item>US</item>
+        <item>UK</item>
+        <item>RD</item>
+        <item>FR</item>
+        <item>MX</item>
+
+
+    </string-array>
+
+    <string-array name="Genders">
+        <item>Male</item>
+        <item>Female</item>
+
+
+
+    </string-array>
+
+
 </resources>
