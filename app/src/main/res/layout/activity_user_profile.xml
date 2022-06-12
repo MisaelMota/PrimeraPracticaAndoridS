@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserProfile"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txtname"
+        android:layout_width="227dp"
+        android:layout_height="94dp"
+        android:text="Hola Usuario" />
+
+    <TextView
+        android:id="@+id/txtLastName"
+        android:layout_width="227dp"
+        android:layout_height="94dp"
+        android:text="Hola Usuario" />
+
+    <TextView
+        android:id="@+id/txtBirthday"
+        android:layout_width="227dp"
+        android:layout_height="94dp"
+        android:text="Hola Usuario" />
+
+    <TextView
+        android:id="@+id/txtGender"
+        android:layout_width="227dp"
+        android:layout_height="94dp"
+        android:text="Hola Usuario" />
+
+    <TextView
+        android:id="@+id/txtCountry"
+        android:layout_width="227dp"
+        android:layout_height="94dp"
+        android:text="Hola Usuario" />
+
+    <TextView
+        android:id="@+id/txtEmail"
+        android:layout_width="227dp"
+        android:layout_height="94dp"
+        android:text="Hola Usuario" />
+
+
+
+</LinearLayout>

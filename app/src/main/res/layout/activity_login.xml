@@ -48,6 +48,8 @@
             android:layout_height="wrap_content"
             android:id="@+id/Username"
             android:hint="Username"
+            app:errorEnabled="true"
+            app:errorIconDrawable="@null"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -58,15 +60,38 @@
 
             </com.google.android.material.textfield.TextInputEditText>
 
+        </com.google.android.material.textfield.TextInputLayout>
 
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Layname"
+            android:hint="Name"
+            app:errorEnabled="true"
+            app:errorIconDrawable="@null"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/lName"
+                >
+
+            </com.google.android.material.textfield.TextInputEditText>
 
         </com.google.android.material.textfield.TextInputLayout>
+
+
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/Password"
             android:hint="Password"
+            app:errorEnabled="true"
+            app:errorIconDrawable="@null"
             app:passwordToggleEnabled="true"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 

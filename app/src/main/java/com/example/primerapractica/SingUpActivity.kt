@@ -157,8 +157,8 @@ class SingUpActivity : AppCompatActivity() {
         }else{
 
 
-            dbRef.child(userID).setValue(user)
-                .addOnCompleteListener {
+            dbRef.child(userName).setValue(user)
+                .addOnSuccessListener {
                     createUser(userEmail,userPassword)
                     Toast.makeText(this,"Data inserted successful",Toast.LENGTH_LONG).show()
                 }.addOnFailureListener { err ->
